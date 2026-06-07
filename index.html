@@ -1,12 +1,243 @@
+```html
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AnBinhBooking</title>
+<title>AnBinhBooking.com</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f8fc;
+    color:#333;
+}
+
+header{
+    background:#0B63CE;
+    color:white;
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    height:550px;
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#FFC107;
+    color:#000;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    color:#0B63CE;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#0B63CE;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.contact{
+    background:#0B63CE;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.contact a{
+    display:inline-block;
+    background:#FFC107;
+    color:black;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:8px;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+footer{
+    background:#083E82;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+nav{
+    display:none;
+}
+
+}
+</style>
+
 </head>
 <body>
-<h1>Chào mừng đến với AnBinhBooking.com</h1>
-<p>Website du lịch của An Bình Travel</p>
+
+<header>
+<div class="logo">AnBinhBooking</div>
+
+<nav>
+<a href="#">Trang chủ</a>
+<a href="#">Tour</a>
+<a href="#">Vé máy bay</a>
+<a href="#">Khách sạn</a>
+<a href="#">Visa</a>
+<a href="#">Liên hệ</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Đặt Trọn Hành Trình</h1>
+<p>Tour • Vé máy bay • Khách sạn • Visa</p>
+<a href="#" class="btn">Đặt Ngay</a>
+</div>
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Tour Nổi Bật</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=1000">
+<div class="card-content">
+<h3>Campuchia 4N3Đ</h3>
+<p>Khám phá Angkor Wat nổi tiếng.</p>
+<br>
+<div class="price">4.990.000 VNĐ</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1000">
+<div class="card-content">
+<h3>Thái Lan 5N4Đ</h3>
+<p>Bangkok - Pattaya trọn gói.</p>
+<br>
+<div class="price">7.990.000 VNĐ</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1000">
+<div class="card-content">
+<h3>Singapore</h3>
+<p>Khám phá đảo quốc sư tử.</p>
+<br>
+<div class="price">9.990.000 VNĐ</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Liên Hệ Đặt Tour</h2>
+
+<p>Hotline: 0123 456 789</p>
+<p>Zalo: 0123 456 789</p>
+
+<a href="tel:0123456789">Gọi Ngay</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 AnBinhBooking.com - An Bình Travel</p>
+
+</footer>
+
 </body>
 </html>
+```
